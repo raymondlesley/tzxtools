@@ -1,10 +1,18 @@
 # tzxtools
 
 This is a collection of command line tools for processing TZX files.
+Forked from https://github.com/benitoss/tzxtools.git
+(forked from https://github.com/shred/tzxtools.git).
 
-TZX is a common file format for preserving computer tapes of the ZX Spectrum, but also Amstrad CPC, C64 and MSX. `tzxtools` mainly supports ZX Spectrum TZX files, but raw file operations can be applied on any TZX file. It also supports TSX files, which are mainly used for MSX.
+Main changes TODO:
+* Convert to Linux/Python command-line scripts
+* Refactor to avoid dependencies
+* Refactor to support streaming
+* Add TAP to TZX conversion
 
 ## Features
+
+TZX is a common file format for preserving computer tapes of the ZX Spectrum, but also Amstrad CPC, C64 and MSX. `tzxtools` mainly supports ZX Spectrum TZX files, but raw file operations can be applied on any TZX file. It also supports TSX files, which are mainly used for MSX.
 
 * Convert your old ZX Spectrum tape recordings into TZX files.
 * List, split, merge, and divide the blocks inside TZX files.
@@ -19,17 +27,10 @@ TZX is a common file format for preserving computer tapes of the ZX Spectrum, bu
 
 ## Installation
 
-All the _tzxtools_ are written in Python 3.
+All the _tzxtools_ are written in Python 3 and intended to run as Linux scripts.
 
 ```sh
-pip install tzxtools
-```
-
-On MacOS X, [PortAudio](http://www.portaudio.com/) needs to be installed before:
-
-```sh
-brew install portaudio
-pip3 install tzxtools
+git clone tzxtools
 ```
 
 ## Tools
